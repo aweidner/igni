@@ -1,9 +1,9 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
   name='igni',
-  packages=['igni'],
-  version='0.2.0',
+  packages=find_packages(),
+  version='0.3.0',
   license='MIT',
   description='Client for gitignore.io with shell completions',
   entry_points={
@@ -12,7 +12,7 @@ setup(
   author='Adam Weidner',
   author_email='aweidner6993@gmail.com',
   url='https://github.com/aweidner/igni',
-  download_url='https://github.com/aweidner/igni/archive/0.2.0.tar.gz',
+  download_url='https://github.com/aweidner/igni/archive/0.3.0.tar.gz',
   keywords=['gitignore', 'gitignore.io'],
   install_requires=[
     'requests'

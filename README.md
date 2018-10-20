@@ -11,5 +11,11 @@ Generate a `.gitignore` file
 
 Generate completions for bash
 
-    igni completion > igni-completion.bash
+    igni bash-completion > igni-completion.bash
     source igni-completion.bash
+
+Generate completions for fish
+    
+    igni fish-completion > igni-completion.fish
+    mkdir -p ~/.config/fish/completions
+    mv igni-completions ~/.config/fish/completions
