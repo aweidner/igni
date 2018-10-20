@@ -1,10 +1,13 @@
 import sys
-from igni import call_gitignore, completion
+from igni import run
 
-if len(sys.argv) < 2:
-    print("No argument supplied")
 
-if sys.argv[1] == "completion":
-    print(completion())
-else:
-    print(call_gitignore(*sys.argv[1:]))
+def main():
+    if len(sys.argv) < 2:
+        print("No argument supplied")
+
+    print(run(sys.argv))
+
+
+if __name__ == "__main__":
+    main()
